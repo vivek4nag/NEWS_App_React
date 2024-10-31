@@ -23,7 +23,7 @@ const NewsItem = ({ title, description, src, url, publishDate }) => {
         <h5 className="card-title">{title.slice(0, 80)}</h5>
         <p className="card-text">
           {description
-            ? description.slice(0, 90)
+            ? description.slice(0, 100)
             : "check out more about the news by clicking readmore button"}
         </p>
         <a href={url} className="btn btn-primary">
