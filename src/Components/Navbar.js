@@ -6,7 +6,12 @@ const Navbar = ({ setCategory }) => {
     >
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          <span className="badge bg-light text-dark fs-4" onClick={() => setCategory("general")}>News Digest</span>
+          <span
+            className="badge bg-light text-dark fs-4"
+            onClick={() => setCategory("general")}
+          >
+            News Digest
+          </span>
         </a>
         <button
           className="navbar-toggler"
@@ -22,30 +27,59 @@ const Navbar = ({ setCategory }) => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav user-select-none">
             <li className="nav-item">
-              <div className="nav-link cursor-pointer" onClick={() => setCategory("technology")}>Technology</div>
+              <div
+                className="nav-link cursor-pointer"
+                onClick={() => setCategory("technology")}
+              >
+                Technology
+              </div>
             </li>
 
             <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("health")}>Health</div>
+              <div className="nav-link" onClick={() => setCategory("health")}>
+                Health
+              </div>
             </li>
 
             <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("business")}>Business</div>
+              <div className="nav-link" onClick={() => setCategory("business")}>
+                Business
+              </div>
             </li>
 
             <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("entertainment")}>Entertainment</div>
+              <div
+                className="nav-link"
+                onClick={() => setCategory("entertainment")}
+              >
+                Entertainment
+              </div>
             </li>
 
             <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("science")}>Science</div>
+              <div className="nav-link" onClick={() => setCategory("science")}>
+                Science
+              </div>
             </li>
 
             <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("sports")}>Sports</div>
+              <div className="nav-link" onClick={() => setCategory("sports")}>
+                Sports
+              </div>
             </li>
           </ul>
         </div>
+        <form class="d-none d-lg-flex align-items-center">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
       </div>
     </nav>
   );

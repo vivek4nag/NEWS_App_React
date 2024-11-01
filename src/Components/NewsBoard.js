@@ -18,7 +18,7 @@ const NewsBoard = ({ category }) => {
       <h2 className="text-center py-4">
         Latest{" "}
         <span className=" badge text-bg-success">
-          {category.toUpperCase()} News
+          {category.toUpperCase() === `GENERAL`? `BREAKING` :category.toUpperCase() } News
         </span>
       </h2>
       <div className="d-inline-flex p-4 m-4 align-items-center flex-wrap">
