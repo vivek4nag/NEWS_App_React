@@ -28,7 +28,8 @@ const Navbar = ({ setCategory }) => {
           <ul className="navbar-nav user-select-none">
             <li className="nav-item">
               <div
-                className="nav-link cursor-pointer"
+                className="nav-link"
+                style={{ cursor: "pointer" }}
                 onClick={() => setCategory("technology")}
               >
                 Technology
@@ -36,13 +37,21 @@ const Navbar = ({ setCategory }) => {
             </li>
 
             <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("health")}>
+              <div
+                className="nav-link"
+                style={{ cursor: "pointer" }}
+                onClick={() => setCategory("health")}
+              >
                 Health
               </div>
             </li>
 
             <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("business")}>
+              <div
+                className="nav-link"
+                style={{ cursor: "pointer" }}
+                onClick={() => setCategory("business")}
+              >
                 Business
               </div>
             </li>
@@ -50,6 +59,7 @@ const Navbar = ({ setCategory }) => {
             <li className="nav-item">
               <div
                 className="nav-link"
+                style={{ cursor: "pointer" }}
                 onClick={() => setCategory("entertainment")}
               >
                 Entertainment
@@ -57,26 +67,35 @@ const Navbar = ({ setCategory }) => {
             </li>
 
             <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("science")}>
+              <div
+                className="nav-link"
+                style={{ cursor: "pointer" }}
+                onClick={() => setCategory("science")}
+              >
                 Science
               </div>
             </li>
 
             <li className="nav-item">
-              <div className="nav-link" onClick={() => setCategory("sports")}>
+              <div
+                className="nav-link"
+                style={{ cursor: "pointer" }}
+                onClick={() => setCategory("sports")}
+              >
                 Sports
               </div>
             </li>
           </ul>
         </div>
-        <form class="d-none d-lg-flex align-items-center">
+        
+        <form className="d-none d-lg-flex align-items-center">
           <input
-            class="form-control me-2"
+            className="form-control me-2"
             type="search"
             placeholder="Search"
             aria-label="Search"
           />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+          <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
             Search
           </button>
         </form>

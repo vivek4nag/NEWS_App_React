@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import ReactDOM from "react-dom"
+import ReactDOM from "react-dom/client"
 import Navbar from "./Components/Navbar";
 import NewsBoard from "./Components/NewsBoard"; 
 
 const App = () => {
     const[category, setCategory] = useState("general")
     return (
-        <div>
+        <div style={{ userSelect: "none" }}>
             <Navbar setCategory = {setCategory}/>
             <NewsBoard category = {category}/>
         </div>
