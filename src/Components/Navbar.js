@@ -88,7 +88,7 @@ const Navbar = ({ setCategory }) => {
           </ul>
         </div>
         
-        <form className="d-none d-lg-flex align-items-center">
+        {/* <form className="d-none d-lg-flex align-items-center">
           <input
             className="form-control me-2"
             type="search"
@@ -98,7 +98,7 @@ const Navbar = ({ setCategory }) => {
           <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
             Search
           </button>
-        </form>
+        </form> */}
       </div>
     </nav>
   );

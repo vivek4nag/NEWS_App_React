@@ -21,7 +21,7 @@ const NewsItem = ({ title, description, src, url, publishDate, sourceName }) => 
       <div className="card-body">
         <p className="card-text"  style={{ color: "#C8C9C8" }}>publish date: {publishDate.slice(0, 10)}</p>
         <p className="card-text"  style={{ color: "#FBE58A" }}>article by: {sourceName}</p>
-        <h5 className="card-title">{title.slice(0, 80)}</h5>
+        <h5 className="card-title">{title.slice(0, 70)}</h5>
         <p className="card-text " style={{ color: "#C8C9C8" }}>
           {description
             ? description.slice(0, 100)
