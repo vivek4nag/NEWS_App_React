@@ -1,20 +1,21 @@
 import { useEffect, useState } from "react";
-import { NEWS_URL, NEWS_API_KEY } from "../utils/constant";
+import { NEWS_URL} from "../utils/constant";
 import NewsItem from "./NewsItem";
 import Image from "../assets/news.png";
 import Shimmer from "./Shimmer";
 
 const NewsBoard = ({ category }) => {
+  const apikey = process.env.REACT_APP_API_KEY
   const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    fetch(NEWS_URL + `&category=${category}` + NEWS_API_KEY)
+    fetch(NEWS_URL + `&category=${category}&apiKey=${apikey}`)
       .then((Response) => Response.json())
       .then((data) => setArticles(data.articles));
   }, [category]);
   console.log(articles);
 
-  return articles.length === 0 ? (
+  return (articles.length === 0 || articles === null) ? (
     <Shimmer />
   ) : (
     <div style={{ backgroundColor: "#d9ead3", color: "#4a6055" }}>
